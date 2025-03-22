@@ -1,16 +1,26 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/apps/api"
+  - package-ecosystem: npm
+    directory: /apps/api
     schedule:
-      interval: "daily"
+      interval: daily
 
-  - package-ecosystem: "npm"
-    directory: "/apps/web"
+  - package-ecosystem: npm
+    directory: /apps/web
     schedule:
-      interval: "daily"
+      interval: daily
 
-  - package-ecosystem: "npm"
-    directory: "/packages/libs"
+  - package-ecosystem: npm
+    directory: /packages/libs
     schedule:
-      interval: "daily"
+      interval: daily
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+  
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
